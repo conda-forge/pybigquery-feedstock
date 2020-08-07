@@ -1,5 +1,5 @@
 {% set name = "pybigquery" %}
-{% set version = "0.4.13" %}
+{% set version = "0.4.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0d235c8a4e84b69f49f71cc9181c77d63ccdb33bf927d62fd5a5eaaf7c8882db
+  sha256: 8cd2b0b947867eea70c39c85e2c6b69c7187fd649d9472658dd284391c5584c8
 
 build:
   noarch: python
   entry_points:
-    - "bigquery = pybigquery.sqlalchemy_bigquery:BigQueryDialect"
+    - bigquery = pybigquery.sqlalchemy_bigquery:BigQueryDialect
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'SQLAlchemy dialect and API client for BigQuery.'
+  summary: SQLAlchemy dialect and API client for BigQuery.
 
 extra:
   recipe-maintainers:
