@@ -5,11 +5,9 @@ Home: https://github.com/mxmzdlv/pybigquery
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pybigquery-feedstock/blob/master/LICENSE.txt)
 
 Summary: SQLAlchemy dialect and API client for BigQuery.
-
-
 
 Current build status
 ====================
