@@ -1,5 +1,5 @@
 {% set name = "pybigquery" %}
-{% set version = "0.4.15" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8cd2b0b947867eea70c39c85e2c6b69c7187fd649d9472658dd284391c5584c8
+  sha256: a8cc932081f4f94dbc694b4976cd0ead583b01614bd941ba1dae632ce5d072e0
 
 build:
   noarch: python
